@@ -2,90 +2,103 @@
 <html lang="ru" class="page">
 	<head>
 		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="css/styles.min.css">
 		<title>Марафон "Заверстаю" HTMLAcademy</title>
 	</head>
-	<body class="page-body">
+	<body class="page__body">
 		<header class="page-header">
-			<div class="wrapper">
-				<div class="header-logo">
-					<img src="img/logo.svg" width="91" height="25" alt="Logotype" />
-				</div>
-				<nav class="main-nav">
-					<div class="nav-wrapper">
-						<ul class="menu-list">
-							<li class="menu-item">
-								<a class="menu-link" href="#">О компании</a>
-							</li>
-							<li class="menu-item">
-								<a class="menu-link" href="#">Портфолио</a>
-							</li>
-							<li class="menu-item">
-								<a class="menu-link" href="#">Команда</a>
-							</li>
-							<li class="menu-item">
-								<a class="menu-link" href="#">Как мы работаем</a>
-							</li>
-							<li class="menu-item">
-								<a class="menu-link" href="#">Отзывы клиентов</a>
-							</li>
-							<li class="menu-item">
-								<a class="menu-link" href="#">Оставить заявку</a>
-							</li>
-						</ul>
-						<p class="contact-phone">+7 (981) 857-46-24</p>
+			<div class="page-header__wrapper">
+				<div class="page-header__menu-bar">
+					<div class="page-header__logo">
+						<img src="img/logo.svg" width="91" height="25" alt="Logotype" />
 					</div>
-				</nav>
-				<section class="header-order">
-					<h2 class="header-title">Поможем сделать вашу квартиру уютнее</h2>
-					<p class="header-text">
+					<nav class="main-nav">
+						<div class="main-nav__wrapper">
+							<ul class="main-nav__menu menu">
+								<li class="menu__item">
+									<a class="menu__link" href="#company">О компании</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="#works">Портфолио</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="#team">Команда</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="#procedures">Как мы работаем</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="#reviews">Отзывы клиентов</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="#request">Оставить заявку</a>
+								</li>
+							</ul>
+							<p class="page-header__contact-phone">+7 (981) 857-46-24</p>
+						</div>
+					</nav>
+				</div>				
+				<section class="page-header__request header-request">
+					<h2 class="header-request__title">Поможем сделать вашу квартиру уютнее</h2>
+					<p class="header-request__text">
 						Подбираем текстиль, мебель и аксессуары под ваш интерьер, находим
 						магазины и помогаем организовать доставку
 					</p>
-					<a class="header-btn" href="#">Оставить заявку</a>
+					<a class="header-request__btn" href="#">Оставить заявку</a>
 				</section>
 			</div>
 		</header>
 		<main class="page-main">
-			<section class="about-company">
-				<h2 class="about-title">О нас</h2>
-				<p class="about-text">
-					Премиальный европейский текстиль — одно из самых главных направлений
-					работы коллектива. Создавать неповторимые интерьеры для наших дорогих
-					клиентов, уделяя внимание мельчайшим деталям — вот то, что
-					по-настоящему вдохновляет дизайнеров нашей студии. Наш коллектив
-					сделает все, чтобы после сотрудничества с нами, Вам было приятно
-					сказать: « Да! Это именно то, что действительно достойно моего дома!»
-				</p>
-				<article class="achievements">
-					<ul class="achievements-list">
-						<li class="achievements-item">5 лет опыта</li>
-						<li class="achievements-item">100 проектов</li>
-						<li class="achievements-item">10 наград</li>
-					</ul>
-				</article>
-			</section>
-			<section class="works">
-				<h2 class="works-title">Наши работы</h2>
-				<div class="work-inner-wrapper">
-					<h3 class="work-description-title">Квартира-студия 30 кв.м.</h3>
-					<p>
-						В квартире были светлые стены и тёплые цвета. Мы сконцентрировались
-						на отсылках к природе и сделали ребятам уютный интерьер, отсылающий
-						к виллам островов Бали.
+			<section class="page-main__company company" id="company">
+				<div class="company__info">
+					<h2 class="company__title">О нас</h2>
+					<p class="company__text">
+						Премиальный европейский текстиль — одно из самых главных направлений
+						работы коллектива. Создавать неповторимые интерьеры для наших дорогих
+						клиентов, уделяя внимание мельчайшим деталям — вот то, что
+						по-настоящему вдохновляет дизайнеров нашей студии. Наш коллектив
+						сделает все, чтобы после сотрудничества с нами, Вам было приятно
+						сказать: « Да! Это именно то, что действительно достойно моего дома!»
 					</p>
-					<div>
+				</div>
+				<div class="company__achievements achievements">
+					<h2 class="visually-hidden">Наши достижения</h2>
+					<ul class="achievements__list">
+						<li class="achievements__item">
+							<h2>5</h2> 
+							<p>лет опыта</p>
+						</li>
+						<li class="achievements__item">
+							<h2>100</h2> 
+							<p>100</p>
+						</li>
+						<li class="achievements__item">
+							<h2>10</h2>
+							<p>наград</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="page-main__works works" id="works">
+				<h2 class="works__title">Наши работы</h2>
+				<div class="works__wrapper">
+					<div class="works__inner-wrapper">
+						<h3 class="works__description-title">Квартира-студия 30 кв.м.</h3>
+						<p class="works__text">
+							В квартире были светлые стены и тёплые цвета. Мы сконцентрировались
+							на отсылках к природе и сделали ребятам уютный интерьер, отсылающий
+							к виллам островов Бали.
+						</p>
+					</div>					
+					<div class="works__inner-wrapper">
 						<img
 							src="img/studio-1.jpg"
 							width="692"
 							height="451"
 							alt="Studio-1"
 						/>
-						<img
-							src="img/studio-2.jpg"
-							width="692"
-							height="451"
-							alt="Studio-2"
-						/>
+					</div>
+					<div class="works__inner-wrapper">
 						<img
 							src="img/studio-3.jpg"
 							width="488"
@@ -93,52 +106,60 @@
 							alt="Studio-3"
 						/>
 					</div>
+					<div class="works__inner-wrapper">
+						<img
+							src="img/studio-2.jpg"
+							width="692"
+							height="451"
+							alt="Studio-2"
+						/>
+					</div>
 				</div>
-				<a href="#">Смотреть ещё</a>
+				<a class="works__btn" href="#">Смотреть ещё</a>
 			</section>
-			<section class="team">
-				<h2>Команда</h2>
-				<div class="team-wrapper">
-					<ul class="team-list">
-						<li class="team-item">
-							<figure>
+			<section class="page-main__team team" id="team">
+				<h2 class="team__title">Команда</h2>
+				<div class="team__wrapper">
+					<ul class="team__list">
+						<li class="team__card">
+							<figure class="team__figure">
 								<img
 									src="img/photo-masha.jpg"
 									width="320"
 									height="253"
 									alt="Masha Chief Designer"
 								/>
-								<figcaption>
+								<figcaption class="team__text">
 									Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект,
 									приезжает к вам домой, общается и помогает сделать вашу
 									квартиру красивой и уютной.
 								</figcaption>
 							</figure>
 						</li>
-						<li class="team-item">
-							<figure>
+						<li class="team__card">
+							<figure class="team__figure">
 								<img
 									src="img/photo-sasha.jpg"
 									width="320"
 									height="253"
 									alt="Sasha Manager"
 								/>
-								<figcaption>
+								<figcaption class="team__text">
 									С нашим менеджером Сашей вы познакомитесь в первую очередь.
 									Она проконсультирует вас, соберёт все документы и ответит на
 									все вопросы.
 								</figcaption>
 							</figure>
 						</li>
-						<li class="team-item">
-							<figure>
+						<li class="team__card">
+							<figure class="team__figure">
 								<img
 									src="img/photo-katya.jpg"
 									width="320"
 									height="253"
 									alt="Katya Designer"
 								/>
-								<figcaption>
+								<figcaption class="team__text">
 									Катя тоже занимается дизайном. Она всегда находит общий язык с
 									клиентами и точно знает, как обсутроить дом так, чтобы вам
 									понравилось.
@@ -146,62 +167,93 @@
 							</figure>
 						</li>
 					</ul>
-					<ol class="procedures">
-						<li class="procedure-item">
-							Знакомимся, выезжаем на объект, утверждаем концепцию, подписывем
-							договор.
-						</li>
-						<li class="procedure-item">
-							Подбираем мебель, текстиль, аксессуры. Делаем 3D- зуализацию.
-						</li>
-						<li class="procedure-item">
-							Находим нужные магазины, помогаем с доставкой и оплатой товаров.
-						</li>
-						<li class="procedure-item">
-							Воплощаем проект в жизнь: расставляем мебель и цветы, вешаем
-							шторы, находим места для мелочей
-						</li>
-					</ol>
+				</div>
+				<div class="page-main__procedures procedures" id="procedures">
+					<h2>Как мы работаем</h2>
+					<div class="procedures__wrapper">
+						<ol class="procedures__list">
+							<li class="procedures__item">
+								Знакомимся, выезжаем на объект, утверждаем концепцию, подписывем
+								договор.
+							</li>
+							<li class="procedures__item">
+								Подбираем мебель, текстиль, аксессуры. Делаем 3D- зуализацию.
+							</li>
+							<li class="procedures__item">
+								Находим нужные магазины, помогаем с доставкой и оплатой товаров.
+							</li>
+							<li class="procedures__item">
+								Воплощаем проект в жизнь: расставляем мебель и цветы, вешаем
+								шторы, находим места для мелочей
+							</li>
+						</ol>
+					</div>
 				</div>
 			</section>
-			<blockquote class="reviews">
+			<blockquote class="page-main__reviews reviews" id="reviews">
 				<h2>Отзывы</h2>
-				<div class="reviews-inner-wrapper">
-					<p>
-						«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу
-						студию для украшения своего дома. Работа шла быстро, было очень
-						приятно общаться и взаимодествовайть с сотрудниками. Не ожидала, что
-						это будет так легко! Буду советовать и своим друзьям к вам
-						обращаться!»
-					</p>
-					<p>АННА БЕЛОВСКАЯ</p>
-				</div>
-				<figure>
-					<img src="img/review-pic1.jpg" width="407" height="272" alt="Review Anna Belovskaya Pic-1">
-					<img src="img/review-pic2.jpg" width="407" height="272" alt="Review Anna Belovskaya Pic-2">
-				</figure>
+				<div class="reviews__wrapper">
+					<div class="reviews__text-wrapper">
+						<p class="reviews__text">
+							«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу
+							студию для украшения своего дома. Работа шла быстро, было очень
+							приятно общаться и взаимодествовайть с сотрудниками. Не ожидала, что
+							это будет так легко! Буду советовать и своим друзьям к вам
+							обращаться!»
+						</p>
+						<p class="reviews__user">АННА БЕЛОВСКАЯ</p>
+					</div>
+					<figure class="reviews__figure">
+						<img
+							src="img/review-pic1.jpg"
+							width="407"
+							height="272"
+							alt="Review Anna Belovskaya Pic-1"
+						/>
+						<img
+							src="img/review-pic2.jpg"
+							width="407"
+							height="272"
+							alt="Review Anna Belovskaya Pic-2"
+						/>
+					</figure>
+				</div>				
 			</blockquote>
-			<section>
-				<h2>Оставить заявку</h2>
-				<p>Оставьте свои контакты. Менеджер перезвонит
-					в удобное вам время и ответит на все вопросы.</p>
-					<form action="/" method="POST">
-						<div>
-							<label for="name">Ваше имя</label>
-							<input type="text" id="name" name="name" placeholder="Ваше имя" required>
-						</div>
-						<div>
-							<label for="name">Введите телефон</label>
-							<input type="tel" id="tel" name="tel" placeholder="Введите телефон" required>
-						</div>
-						<button type="submit">Оставить заявку</button>
-					</form>
+			<section class="page-main__request request" id="request">
+				<h2 class="request__title">Оставить заявку</h2>
+				<p class="request__text">
+					Оставьте свои контакты. Менеджер перезвонит в удобное вам время и
+					ответит на все вопросы.
+				</p>
+				<form class="request__form" action="/" method="POST">
+					<div class="request__inner-wrapper">
+						<label class="visually-hidden" for="name">Ваше имя</label>
+						<input class="request__input"
+							type="text"
+							id="name"
+							name="name"
+							placeholder="Ваше имя"
+							required
+						/>
+					</div>
+					<div class="request__inner-wrapper">
+						<label class="visually-hidden" for="name">Введите телефон</label>
+						<input class="request__input"
+							type="tel"
+							id="tel"
+							name="tel"
+							placeholder="Введите телефон"
+							required
+						/>
+					</div>
+					<button class="request__btn" type="submit">Оставить заявку</button>
+				</form>
 			</section>
 		</main>
-		<footer>
-			<p>+7 (981) 857-46-24</p>
-			<p>г. Санкт-петербург, ул. Большая Конюшенная, 19</p>
-			<p>ИП Королёва А.А.</p>
+		<footer class="page-footer">
+			<p class="page-footer__contact">+7 (981) 857-46-24</p>
+			<p class="page-footer__address">г. Санкт-петербург, ул. Большая Конюшенная, 19</p>
+			<p class="page-footer__copyright">ИП Королёва А.А.</p>
 		</footer>
 	</body>
 </html>

@@ -1,0 +1,18 @@
+.procedures {
+	text-align: center;
+	outline: 2px solid red;
+}
+
+.procedures__wrapper {
+	margin-top: 130px;
+}
+
+.procedures__list {
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	column-gap: 20px;
+}
+
+.procedures__item {
+	outline: 2px solid red;
+}

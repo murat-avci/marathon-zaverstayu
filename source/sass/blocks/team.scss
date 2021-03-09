@@ -1,0 +1,9 @@
+.team__list {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	column-gap: 38px;
+}
+
+.team__text {
+	margin-top: 10px;
+}

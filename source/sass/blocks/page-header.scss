@@ -1,0 +1,15 @@
+.page-header {
+	padding: 36px 100px 168px 98px;
+}
+
+.page-header__menu-bar {
+	display: grid;
+	grid-template-columns: 91px 1fr;
+	column-gap: 82px;
+}
+
+.page-header__request {
+	width: 536px;
+	margin-top: 91px;
+	margin-left: 84px;
+}
