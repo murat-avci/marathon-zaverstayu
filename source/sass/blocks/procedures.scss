@@ -1,6 +1,10 @@
 .procedures {
 	text-align: center;
-	outline: 2px solid red;
+}
+
+.procedures__title {
+	@include text(40px,50px,400,$text1);
+	text-transform: uppercase;
 }
 
 .procedures__wrapper {
@@ -9,10 +13,35 @@
 
 .procedures__list {
 	display: grid;
-	grid-template-columns: repeat(4,1fr);
+	grid-template-columns: repeat(4,285px);
 	column-gap: 20px;
+	counter-reset: number;
 }
 
 .procedures__item {
-	outline: 2px solid red;
+	position: relative;
+
+	@include main-text;
+	&::before {
+		position: absolute;
+		content: counter(number);
+		counter-increment: number;
+		top: -70px;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 15;
+		@include text(30px,30px,500,$basic-white);
+	}
+
+	&::after {
+		position: absolute;
+		content: "";
+		top: -90px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 70px;
+		height: 70px;
+		background-color: $bg-dark;
+		border-radius: 50%;
+	}
 }

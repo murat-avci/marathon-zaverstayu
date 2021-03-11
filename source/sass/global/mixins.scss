@@ -1,0 +1,30 @@
+@mixin text($size,$height,$weight,$color) {
+  font: {
+    size: $size;
+    weight: $weight;
+  }
+  line-height: $height;
+  color: $color;
+}
+
+@mixin main-text {
+	font: {
+    size: 18px;
+    weight: 400;
+  }
+  line-height: 30px;
+  color: $text1;
+}
+
+@mixin title {
+	font-size: 40px;
+	line-height: 50px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: $text1;
+}
+
+@mixin btn-hover ($background-color,$color) {
+  background-color: rgba($color: $background-color, $alpha: 0.7);
+  color: rgba($color: $color, $alpha: 0.7);
+}

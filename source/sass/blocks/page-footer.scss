@@ -1,6 +1,8 @@
 .page-footer {
 	display: flex;
 	justify-content: flex-start;
+
+	@include main-text;
 	padding: 37px 100px;
 }
 

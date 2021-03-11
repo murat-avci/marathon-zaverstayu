@@ -1,8 +1,24 @@
+.header-request__title {
+	@include text(50px,62px,400,$text1);
+}
+
 .header-request__text {
+	@include text(18px,30px,400,$text1);
 	margin-top: 23px;
+	padding-right: 130px;
 }
 
 .header-request__btn {
 	display: inline-block;
+
+	@include text(20px,24px,500,$text1);
+	text-decoration: none;
+	background-color: $bg-btn;
+	padding: 25px 66px 24px 68px;
 	margin-top: 23px;
+
+	&:hover {
+		background-color: rgba($color: $bg-btn, $alpha: 0.7);
+		color: $basic-white;
+	}
 }
